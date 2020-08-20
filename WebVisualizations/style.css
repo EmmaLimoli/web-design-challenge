@@ -1,0 +1,38 @@
+header {
+    background: grey;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(57, 207, 192);
+}
+
+.navbar-light-bg-light {
+    background-color: red;
+
+}
+
+
+
+.navbar-brand  {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(57, 207, 192);
+    color: whitesmoke;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav-select {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    color: rgb(100, 98, 98);
+}
