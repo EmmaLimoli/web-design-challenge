@@ -3,6 +3,7 @@
 <!-- Add bootstrap and style.css links to head -->
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Latitude & Longitude Data Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -11,35 +12,40 @@
 <body>
     <!-- nav bar with title on left, name of site, dropdown on right named plots, two links to comp and data, use media queries
     grey/white background -->
-    <div class="header">
-            <!-- As a link -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Latitude</a>
-            <ul>
-                <li>
-                    <a href="#">Plot1</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-link" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="visual1.html">Plot1</a>
                 </li>
-                <li>
-                    <a href="#">Plot2</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plot2</a>
                 </li>
-                <li>
-                    <a href="#">Plot3</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plot3</a>
                 </li>
-                <li>
-                    <a href="#">Plot4</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plot4</a>
                 </li>
-                <li>
-                    <a href="#">Comp</a>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Comp</a>
                 </li>
-                <li>
-                    <a href="#">Data</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
                 </li>
-            </ul>
-        
-        </nav>
+            </ul> 
+        </div>
+    </div>
+    </nav>
   
   <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light">
+        <!-- <nav class="navbar navbar-light bg-light">
             <select id="nav-select">
                 <option value="home">Home</option>
                 <option value="Vis1">Plot1</option>
@@ -50,14 +56,15 @@
                 <option value="Data">Data</option>
             </select>
         
-        </nav>
+        </nav> -->
         
-        <header>
-        <!-- landing page header -->
-        <h1>Summary: Latitude Vs. X</h1>
-    </header>
+       
     <main class="container">
         <section id="main">
+            <header>
+                <!-- landing page header -->
+                <h1>Summary: Latitude Vs. X</h1>
+            </header>
             <p>Description of project.</p>
             <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">
         </section>    
@@ -67,13 +74,21 @@
 on small screen 1 across extra-small -->
 <!-- data page must be responsive table, must be boostrap table component, use pandas to turn file into html -->
     </div>
-        <h3>Visualizations</h3>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+        </div>
+        <div class="col">
+        <h2 class="header-three">Visualizations</h2>
             <div class="images">      
-                <img src="Resources/assets/images/Fig2.png" width=400 alt="City Latitude vs Humidity(1/5/17)">
-                <img src="Resources/assets/images/Fig3.png" width=400 alt="City Latitude vs Cloudiness(1/5/17)">
-                <img src="Resources/assets/images/Fig4.png" width=400 alt="City Latitude vs Wind Speed (1/5/17)">
-                <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">
+                <img src="Resources/assets/images/Fig2.png" width=200 alt="City Latitude vs Humidity(1/5/17)">
+                <img src="Resources/assets/images/Fig3.png" width=200 alt="City Latitude vs Cloudiness(1/5/17)">
+                <img src="Resources/assets/images/Fig4.png" width=200 alt="City Latitude vs Wind Speed (1/5/17)">
+                <img src="Resources/assets/images/Fig1.png" width=200 alt="City Latitude vs Max Temp(1/5/17)">
             </div>
+        </div>
+        </div>
+    </div>
 </body>
 
 </html>
