@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!-- Add bootstrap and style.css links to head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latitude & Longitude Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<!-- Need to create 7 pages (1 landing page, 4 visualization pages, 1 data page, 1 comparison page) -->
+<body>
+    <!-- nav bar with title on left, name of site, dropdown on right named plots, two links to comp and data, use media queries
+    grey/white background -->
+    <header class="bg-header">
+        <div class="container-fluid"></div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <a class="navbar-link" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="navBardrop" roll="button" data-toggle="dropdown">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navBardrop">
+                    <li class="nav-item">
+                        <a class="nav-link" href="visual1.html">Plot1</a>
+                        <a class="nav-link" href="visual2.html">Plot2</a>
+                        <a class="nav-link" href="#">Plot3</a>
+                        <a class="nav-link" href="#">Plot4</a>
+                    </li>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        </nav>
+    </header>
+  
+  <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light">
+                <select id="nav-select">
+                <option value="home">Home</option>
+                <option value="Vis1">Plot1</option>
+                <option value="Vis2">Plot2</option>
+                <option value="Vis3">Plot3</option>
+                <option value="Vis4">Plot4</option>
+                <option value="Comp">Comparison</option>
+                <option value="Data">Data</option>
+            </select>
+        
+        </nav> 

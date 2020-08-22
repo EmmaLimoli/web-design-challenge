@@ -12,83 +12,77 @@
 <body>
     <!-- nav bar with title on left, name of site, dropdown on right named plots, two links to comp and data, use media queries
     grey/white background -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-link" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="visual1.html">Plot1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Plot2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Plot3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Plot4</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Comp</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data</a>
-                </li>
-            </ul> 
-        </div>
-    </div>
-    </nav>
+    <header class="bg-header">
+        <div class="container"></div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-link" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navBardrop" roll="button" data-toggle="dropdown" aria-haspopup="true", aria-expanded="false">Plots</a>
+                            <div class="dropdown-menu" aria-labelledby="navBardrop">
+                                <a class="nav-link" href="visual1.html">Plot1</a>
+                                <a class="nav-link" href="visual2.html">Plot2</a>
+                                <a class="nav-link" href="visual3.html">Plot3</a>
+                                <a class="nav-link" href="#">Plot4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Data</a>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>
+        </div>    
+    </header>
   
   <!-- As a heading -->
-        <!-- <nav class="navbar navbar-light bg-light">
-            <select id="nav-select">
-                <option value="home">Home</option>
+        <nav class="navbar navbar-light bg-light">
+                <select id="nav-select">
                 <option value="Vis1">Plot1</option>
                 <option value="Vis2">Plot2</option>
                 <option value="Vis3">Plot3</option>
                 <option value="Vis4">Plot4</option>
-                <option value="Comp">Comparison</option>
-                <option value="Data">Data</option>
             </select>
         
-        </nav> -->
+        </nav> 
         
        
     <main class="container">
-        <section id="main">
-            <header>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="col-xs-12 col-sm-12 col-md-7">
+                        <div class="box-bg-white">
                 <!-- landing page header -->
-                <h1>Summary: Latitude Vs. X</h1>
-            </header>
-            <p>Description of project.</p>
-            <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">
-        </section>    
-    </main>
+                            <h1>Summary: Latitude Vs. X</h1>
+                            <p>Description of project.</p>
+                            <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">   
+                        </div>
+                    </div>
 <!-- link to four visualization pages, need title, heading tag, visualization, paragraph describing significance/plot -->
 <!-- comparison page, need all visualizes on same page, use bootstrap grid for visualizations, grid must be 2 vis medium and large, 
 on small screen 1 across extra-small -->
 <!-- data page must be responsive table, must be boostrap table component, use pandas to turn file into html -->
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col">
-        </div>
-        <div class="col">
-        <h2 class="header-three">Visualizations</h2>
-            <div class="images">      
-                <img src="Resources/assets/images/Fig2.png" width=200 alt="City Latitude vs Humidity(1/5/17)">
-                <img src="Resources/assets/images/Fig3.png" width=200 alt="City Latitude vs Cloudiness(1/5/17)">
-                <img src="Resources/assets/images/Fig4.png" width=200 alt="City Latitude vs Wind Speed (1/5/17)">
-                <img src="Resources/assets/images/Fig1.png" width=200 alt="City Latitude vs Max Temp(1/5/17)">
-            </div>
-        </div>
+    <div class="col-xs-12 col-sm-12 col-md-5">
+        <div class="box-bg-white">
+            <h2 class="header-three">Visualizations</h2>
+                <div class="images">      
+                    <img src="Resources/assets/images/Fig2.png" width=200 alt="City Latitude vs Humidity(1/5/17)">
+                    <img src="Resources/assets/images/Fig3.png" width=200 alt="City Latitude vs Cloudiness(1/5/17)">
+                    <img src="Resources/assets/images/Fig4.png" width=200 alt="City Latitude vs Wind Speed (1/5/17)">
+                    <img src="Resources/assets/images/Fig1.png" width=200 alt="City Latitude vs Max Temp(1/5/17)">
+                </div>
         </div>
     </div>
+    </main>
 </body>
 
 </html>
