@@ -14,7 +14,7 @@
     grey/white background -->
     <header class="bg-header">
         <div class="container"></div>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <a class="navbar-link" href="index.html">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,66 +23,91 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="navBardrop" roll="button" data-toggle="dropdown" aria-haspopup="true", aria-expanded="false">Plots</a>
-                            <div class="dropdown-menu" aria-labelledby="navBardrop">
-                                <a class="nav-link" href="visual1.html">Plot1</a>
-                                <a class="nav-link" href="visual2.html">Plot2</a>
-                                <a class="nav-link" href="visual3.html">Plot3</a>
-                                <a class="nav-link" href="#">Plot4</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Plot
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="visual1.html">Max Temp</a>
+                              <a class="dropdown-item" href="visual2.html">Humidity</a>
+                              <a class="dropdown-item" href="visual3.html">Cloudiness</a>
+                              <a class="dropdown-item" href="visual4.html">Wind Speed</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comp</a>
+                            <a class="nav-link" href="comp.html">Comp</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Data</a>
+                            <a class="nav-link" href="data.html">Data</a>
                         </li>
                     </ul> 
                 </div>
             </nav>
         </div>    
     </header>
-  
-  <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light">
-                <select id="nav-select">
-                <option value="Vis1">Plot1</option>
-                <option value="Vis2">Plot2</option>
-                <option value="Vis3">Plot3</option>
-                <option value="Vis4">Plot4</option>
-            </select>
-        
-        </nav> 
-        
-       
     <main class="container">
             <div class="container">
                 <div class="row">
                   <div class="col">
-                    <div class="col-xs-12 col-sm-12 col-md-7">
-                        <div class="box-bg-white">
+                      <!-- can't go beyond 12 look at the grids, close tags properly, look at grid, too many classes, don't change any bootstrap classes, add important to it -->
+                    <!-- <div class="col-xs-6 col-sm-6 col-md-6"> -->
+                        <div class="box-bg-white"> 
                 <!-- landing page header -->
+                <!-- <img src="Resources/assets/images/equatorsign_copy.png" width=200 alt="image of the world"> -->
                             <h1>Summary: Latitude Vs. X</h1>
-                            <p>Description of project.</p>
-                            <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">   
+                            <h2>Welcome to our website! </h2>
+                            <br></br>
+                            <p>Our website is dedicated to finding out if there's a correlation between latitude and the weather. In the below graphic from (1/05/2017), 
+                                you can see the relationship between 547 cities from around the world and the maximum temperature they experience. This site is dedicated 
+                                to finding out the truth between world wide city coordinated and the weather.
+                                <br></br>
+                                We studied the relationships between over 500 cities' latitude coordinates, humidity, maximum temperatures, cloudiness, and wind speed. We
+                                came to our conclusion by studying where the city latitudes correspond to those four different factors. 
+                                <br></br>
+                                While there are outliers, we found there was more of a relationship between latitude and maximum temperatures in comparison to the other three factors.
+                                For a more in-depth analysis, continue through our website.
+                            </p>
+                            <a href="visual1.html">
+                                <img src="Resources/assets/images/Fig1.png" width=600 alt="City Latitude vs Max Temp(1/5/17)">
+                            </a>  
                         </div>
                     </div>
 <!-- link to four visualization pages, need title, heading tag, visualization, paragraph describing significance/plot -->
 <!-- comparison page, need all visualizes on same page, use bootstrap grid for visualizations, grid must be 2 vis medium and large, 
 on small screen 1 across extra-small -->
 <!-- data page must be responsive table, must be boostrap table component, use pandas to turn file into html -->
-    <div class="col-xs-12 col-sm-12 col-md-5">
+    <!-- <div class="col-xs-12 col-sm-12 col-md-5"> -->
+        <div class="container">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="w-100"></div>
+              <div class="col"></div>
+              <div class="col"></div>
         <div class="box-bg-white">
             <h2 class="header-three">Visualizations</h2>
-                <div class="images">      
-                    <img src="Resources/assets/images/Fig2.png" width=200 alt="City Latitude vs Humidity(1/5/17)">
-                    <img src="Resources/assets/images/Fig3.png" width=200 alt="City Latitude vs Cloudiness(1/5/17)">
-                    <img src="Resources/assets/images/Fig4.png" width=200 alt="City Latitude vs Wind Speed (1/5/17)">
-                    <img src="Resources/assets/images/Fig1.png" width=200 alt="City Latitude vs Max Temp(1/5/17)">
+                <div class="box-images">
+                    <a href="visual2.html">      
+                        <img src="Resources/assets/images/Fig2.png" width=400 alt="City Latitude vs Humidity(1/5/17)">
+                    </a>
+                    <a href="visual3.html">
+                        <img src="Resources/assets/images/Fig3.png" width=400 alt="City Latitude vs Cloudiness(1/5/17)">
+                    </a>
+                    <a href="visual4.html">
+                        <img src="Resources/assets/images/Fig4.png" width=400 alt="City Latitude vs Wind Speed (1/5/17)">
+                    </a>
+                    <a href="visual1.html">
+                        <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">
+                    </a>
                 </div>
+            </div>
         </div>
+        <!-- </div> -->
     </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </body>
 
 </html>
