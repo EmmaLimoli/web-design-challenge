@@ -114,6 +114,11 @@ p {
     .container-data{
         width:95% !important;
     }
+
+    .img-fluid {
+        width: 100%;
+        height:auto
+    }
     
 }
 
