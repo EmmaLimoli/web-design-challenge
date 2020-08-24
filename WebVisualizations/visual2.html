@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <!-- Need to create 7 pages (1 landing page, 4 visualization pages, 1 data page, 1 comparison page) -->
-<body>
-    <!-- nav bar with title on left, name of site, dropdown on right named plots, two links to comp and data, use media queries
-    grey/white background -->
+<body style="background-color:black">
+    <div class="container container-data" style="background-color: white;">
     <header class="bg-header">
-        <div class="container"></div>
+        <div class="container" style="background-color: white;">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <a class="navbar-link" href="index.html">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -34,7 +33,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="comp.html">Comp</a>
+                            <a class="nav-link" href="comp.html">Comparison</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="data.html">Data</a>
@@ -52,12 +51,43 @@
                     <div class="box-bg-images">
             <!-- landing page header -->
                         <h1>City Latitude Vs. Humidity</h1>
-                        <p>  * A descriptive title and heading tag.
-                            * The plot/visualization itself for the selected comparison.
-                            * A paragraph describing the plot and its significance.</p>
+                        <p>One of the factors we plotted was City Latitude vs. Humidity. 
+                            <br></br>
+                            We took 500+ cities from all over the world and looked at the humidity in correlation of the city latitude.
+                            The question we wanted to address is: Is there a relationship between these cities proximity to the equator and their humidity?
+                            <br></br>
+                            The scatter plot shows us the latitude and the humidity each city exhibits. We can see a majority of the cities range in humidity. Nearing the equator doesn't necessarily
+                            mean that a city will have higher humidity. There are other factors to take into account about humidity. For example, the altitude and rainfall. In 
+                            this graph from 1/05/17, we can see there's no relationship between the city latitude and humidity because there are many outliers and a variety of plots.
+                        </p>
                         <a href="visual2.html">
                             <img src="Resources/assets/images/Fig2.png" width=600 alt="City Latitude vs Humidity(1/5/17)">
                         </a>   
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="col"></div>
+                      <div class="w-100"></div>
+                      <div class="col"></div>
+                      <div class="col"></div>
+                <div class="box-bg-white">
+                    <h2 class="header-three">Visualizations</h2>
+                        <div class="box-images">
+                            <a href="visual2.html">      
+                                <img src="Resources/assets/images/Fig2.png" width=400 alt="City Latitude vs Humidity(1/5/17)">
+                            </a>
+                            <a href="visual3.html">
+                                <img src="Resources/assets/images/Fig3.png" width=400 alt="City Latitude vs Cloudiness(1/5/17)">
+                            </a>
+                            <a href="visual4.html">
+                                <img src="Resources/assets/images/Fig4.png" width=400 alt="City Latitude vs Wind Speed (1/5/17)">
+                            </a>
+                            <a href="visual1.html">
+                                <img src="Resources/assets/images/Fig1.png" width=400 alt="City Latitude vs Max Temp(1/5/17)">
+                            </a>
+                        </div>
                     </div>
                 </div>
   
