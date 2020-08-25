@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <!-- Add bootstrap and style.css links to head -->
+<!-- copied from homepage -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<!-- Need to create 7 pages (1 landing page, 4 visualization pages, 1 data page, 1 comparison page) -->
+<!-- copied from homepage main nav -->
 <body style="background-color:black">
     <div class="container container-data" style="background-color: white;">
     <header class="bg-header">
@@ -43,33 +44,35 @@
             </nav>
         </div>    
     </header>
+    <!-- create a container to move around content and make sure the images are responsive in mobile -->
     <main class="container">
-        <div class="container">
+        <div class="container container-visual">
             <div class="row">
               <div class="col">
-                <div class="col-xs-12 col-sm-12 col-md-7">
                     <div class="box-bg-images">
-            <!-- landing page header -->
+            <!-- visual2 header -->
                         <h1>City Latitude Vs. Humidity</h1>
+                        <!-- write a description of what's occuring in the scatter plot -->
                         <p>One of the factors we plotted was City Latitude vs. Humidity. 
                             <br></br>
-                            We took 500+ cities from all over the world and looked at the humidity in correlation of the city latitude.
+                            We took 500+ cities from all over the world and looked at the humidity in correlation to the city latitude.
                             The question we wanted to address is: Is there a relationship between these cities proximity to the equator and their humidity?
                             <br></br>
                             The scatter plot shows us the latitude and the humidity each city exhibits. We can see a majority of the cities range in humidity. Nearing the equator doesn't necessarily
-                            mean that a city will have higher humidity. There are other factors to take into account about humidity. For example, the altitude and rainfall. In 
-                            this graph from 1/05/17, we can see there's no relationship between the city latitude and humidity because there are many outliers and a variety of plots.
+                            mean that a city will have a higher percentage of humidity. There are other factors to take into account such as the altitude and amount of rainfall. In 
+                            this graph from 1/05/17, we can see there's no relationship between the city latitude and humidity because there are many outliers and the plots are spread out through the graph.
                         </p>
                         <a href="visual2.html">
                             <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=600 alt="City Latitude vs Humidity(1/5/17)">
                         </a>   
                     </div>
                 </div>
+                <!-- create another container for the visualization section, use homepage -->
                 <div class="container">
                     <div class="row">
                         <div class="box-bg-white">
-                        <h2 class="header-three">Visualizations</h2>
-                        <br></br>
+                            <h2 class="header-three">Visualizations</h2>
+                            <br></br>
                             <div class="box-images">
                                 <a href="visual2.html">      
                                     <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=400 alt="City Latitude vs Humidity(1/5/17)">
@@ -86,10 +89,11 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div> 
+    </main> 
+     <!-- add in JS for responsive main nav -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </main>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <!-- Add bootstrap and style.css links to head -->
+<!-- copied from homepage -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+<!-- copied from homepage main nav -->
 <body style="background-color:black">
     <div class="container container-data" style="background-color: white;">
     <header class="bg-header">
@@ -42,16 +44,19 @@
             </nav>
         </div>    
     </header>
+    <!-- create new container for data page -->
     <div class="container container-data-header" style="background-color: black;">
     <h1>Data Breakdown</h1>
-    <p>As mentioned, we took 500+ cities and plotted them on a scatterplot to determine if their proximity to the equator effects humidity,
-        max temp, cloudiness, and wind speed. 
+    <p>As mentioned, we took 500+ cities and plotted them on a scatter plot to determine if their proximity to the equator effects <a href="visual2.html">humidity,</a>
+        <a href="visual1.html">max temp</a>, <a href="visual3.html">cloudiness</a>, and <a href="visual4.html">wind speed.</a>
         <br></br>
-        This is the data we used. We plotted each of these cities on our scatter plots. As you can see, we laid out the city name, country, lat/lng, city ID, cloudiness,
+        This is the data we used. We gathered the data by using Pandas, Matplotlib, and APIs. By using a for loop, we pulled random cities throughout the world using weather APIs.
+        We plotted each of these cities on our scatter plots. As you can see, we laid out the city name, country, lat/lng, city ID, cloudiness,
         humidity, max temp, wind speed, and the date we procured the information. 
         <br></br>
     </p>
     </div>
+    <!-- pull data from jupyter notebook -->
     <div>
         <table class="table table-responsive">
             <!-- <table border="10" class="dataframe"> -->
@@ -7186,6 +7191,7 @@
             </table>
     </div>
 </div>
+<!-- JS for main navigation -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

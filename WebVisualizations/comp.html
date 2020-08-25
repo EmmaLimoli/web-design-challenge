@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <!-- Add bootstrap and style.css links to head -->
+<!-- copied from homepage -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-
+<!-- copied from homepage main nav -->
 <body>
 <body style="background-color:black">
     <div class="container container-data" style="background-color: white;">
@@ -44,39 +45,56 @@
             </nav>
         </div>    
     </header>
+    <!-- create new container for visualization page -->
     <div class="container">
         <div class="row">
             <div class="col">
             <div class="container container-vis-header" style="background-color: black;">
-            <h1 class="header-three">Visualizations</h1>
-                <p>To help provide you with a thorough analysis, we've compared the four factors that could help determine if there's a correlation
-                    between city latitudes and the proximity to the equator. We can see the humidity, cloudiness, wind speed, and the maximum temperature.
+            <h1 class="header-three">Visualization Comparisons</h1>
+                <br></br>
+                <p>To provide a thorough analysis, we've compared the four factors that could help determine if there's a correlation
+                    between city latitudes and the proximity to the equator. Below, we can see scatter plots for the humidity, cloudiness, wind speed, and the maximum temperature.
+                    It's vital to note that these scatter plots are all from 1/05/2017.
                     <br></br>
-                    As mentioned on <a href="visual1.html">Maximum Temperature</a>, we determined that maximum temperature and latitude have a relationship,
-                    but cloudiness, wind speed, and humdity do not. 
+                    As mentioned on <a href="visual1.html">maximum temperature</a>, we determined that maximum temperature and latitude have a relationship,
+                    but <a href="visual3.html">cloudiness</a>, <a href="visual4.html">wind speed</a>, and <a href="visual2.html">humdity</a> do not. In conclusion, we can state 
+                    that only maximum temperature increases when closer to the equator for the cities chosen.
+                    <br></br>
+                    This site is dedicated to finding out the truth of the relationship between world wide city coordinates and the weather.
                 </p>
-                <div class= "row images">
-                    <a href="visual2.html">      
-                        <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=600 alt="City Latitude vs Humidity(1/5/17)">
-                    </a>
-                    <a href="visual3.html">
-                        <img src="Resources/assets/images/Fig3.png" class= "img-fluid" width=600 alt="City Latitude vs Cloudiness(1/5/17)">
-                    </a>
-                    <a href="visual4.html">
-                        <img src="Resources/assets/images/Fig4.png" class= "img-fluid" width=600 alt="City Latitude vs Wind Speed (1/5/17)">
-                    </a>
-                    <a href="visual1.html">
-                        <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=600 alt="City Latitude vs Max Temp(1/5/17)">
-                    </a>
+                <!-- create new container for visualizations, make bigger -->
+                <div class="container container-visual">
+                    <div class="row">
+                      <div class="col">
+                        <div class="box-bg-white">
+                            <h2>Humidity</h2>
+                            <a href="visual2.html">      
+                                <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=600 alt="City Latitude vs Humidity(1/5/17)">
+                            </a>
+                            <br></br>
+                            <h2>Cloudiness</h2>
+                            <a href="visual3.html">
+                                <img src="Resources/assets/images/Fig3.png" class= "img-fluid" width=600 alt="City Latitude vs Cloudiness(1/5/17)">
+                            </a>
+                            <br></br>
+                            <h2>Wind Speed</h2>
+                            <a href="visual4.html">
+                                <img src="Resources/assets/images/Fig4.png" class= "img-fluid" width=600 alt="City Latitude vs Wind Speed (1/5/17)">
+                            </a>
+                            <br></br>
+                            <h2>Max Temp</h2>
+                            <a href="visual1.html">
+                                <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=600 alt="City Latitude vs Max Temp(1/5/17)">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
+    <!-- JS for main nav activation -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
-
-
 </html>

@@ -1,3 +1,4 @@
+/* header tag to make look pretty for all nav */
 header {
     background:slategray;
     padding: 30px;
@@ -7,29 +8,40 @@ header {
     font-weight: bolder;
 }
 
+/* move the table over so not too far to the left */
 .table-responsive-md {
     margin-left: 50px;
 }
+
+/* container data to make it responsive */
 .container-data{
     width:100%;
 }
 
+/* container visual class for the images and text to look better */
+.container-visual {
+    text-align: center;
+}
 
+/* for the h1 tag coloring */
 h1 {
     color: rgb(57, 207, 192);
     text-align: center;
 }
 
+/* for the h2 tag coloring */
 h2 {
     color: whitesmoke;
     text-align: center;
 }
 
+/* make the buttons not huge in main nav*/
 .nav-item {
     font-size: 20px;
     color: black;
 }
 
+/* box set to move around positions */
 .box-bg-white {
     background-color: black;
     align-items: center;
@@ -37,30 +49,20 @@ h2 {
     margin: 50px;
     position: static;
     border: 20px solid slategray
-    
-    
+       
 }
-
+/* align images so they don't look out of line */
 image {
     align-items: center;
 }
 
-
-/* .dropbtn {
-    background-color: black;
-    color: red;
-    padding: 16px;
-    font-size: 16px;
-
-} */
-
-/* .dropdown:hover .dropdown-content {display: block;} */
-
+/* drop down menu */
 .dropdown {
     position: left;
     display:inline-block;
 }
 
+/* drop down menu */
 .dropdown-content a {
     color: blue;
     padding: 12px 16px;
@@ -68,12 +70,13 @@ image {
     display: block;
 }
 
+/* change background for container */
 .container {
     padding: 30px 30px;
     background-color: black;
 }
 
-
+/* drop down menu */
 .navbar-link {
     display: inline-block;
     padding: 15px;
@@ -88,33 +91,37 @@ image {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* drop down menu */
 #nav-select {
-    text-align: center;
-    
+    text-align: center;  
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* body style, added body style in html too  */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: lightgrey;
 }
 
+/* paragraph style */
 p {
     margin-left: 50px;
     color: rgb(57, 207, 192);
 }
 
+/* make header three stand out */
 .header-three {
     color: rgb(57, 207, 192);
     text-align: center !important;
 }
 
+/* media query for responsive images and table */
 @media (max-width: 480px) {
-/* put only images in here */
+/* put the data table in here */
     .container-data{
         width:95% !important;
     }
-
+/* put only images in here */
     .img-fluid {
         width: 100%;
         height:auto

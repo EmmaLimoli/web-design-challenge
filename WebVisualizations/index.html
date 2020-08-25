@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <!-- Add bootstrap and style.css links to head -->
+<!-- add mobile, and title tags -->
+<!-- copy onto other pages -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <!-- Need to create 7 pages (1 landing page, 4 visualization pages, 1 data page, 1 comparison page) -->
+<!-- add main navigation with containers to create style. Use bootstrap for main nav -->
+<!-- make sure divs are closed -->
 <body style="background-color:black">
     <div class="container container-data" style="background-color: white;">
     <header class="bg-header">
@@ -43,71 +47,66 @@
             </nav>
         </div>    
     </header>
+    <!-- create new container for content, use bootstrap for grid -->
     <main class="container">
-            <div class="container">
-                <div class="row">
-                  <div class="col">
+        <div class="container">
+            <div class="row">
+                <div class="col">
                       <!-- can't go beyond 12 look at the grids, close tags properly, look at grid, too many classes, don't change any bootstrap classes, add important to it -->
-                    <!-- <div class="col-xs-6 col-sm-6 col-md-6"> -->
-                        <div class="box-bg-white"> 
-                <!-- landing page header -->
-                <!-- <img src="Resources/assets/images/equatorsign_copy.png" width=200 alt="image of the world"> -->
-                            <h1>Summary: Latitude Vs. X</h1>
-                            <h2>Welcome to our website! </h2>
+                    <div class="box-bg-white"> 
+                        <!-- landing page header -->
+                        <h1>Summary: Latitude Vs. X</h1>
+                        <h2>Welcome to our website! </h2>
+                        <br></br>
+                        <p>Our website is dedicated to finding out if there's a correlation between the latitudes of cities around the world and the weather. We asked whether the cities that were closer to the 
+                            equator would have a higher percentage of humidity, heat, wind, and clouds. We took the <a href="comp.html">data</a> gathered for these cities and used a scatter plot to prove our hypothesis.
                             <br></br>
-                            <p>Our website is dedicated to finding out if there's a correlation between latitude and the weather. We asked whether cities that were closer to the 
-                                equator would be more humid, hot, windy, or cloudy. We plotted the relationship between the latitude of 500+ cities and these factors.
-                                <br></br>
-                                In the below graphic from (1/05/2017), you can see the relationship between 547 cities from around the world and the maximum temperature they experience. This site is dedicated 
-                                to finding out the truth between world wide city coordinated and the weather.
-                                <br></br>
-                                We studied the relationships between over 500 cities' latitude coordinates, humidity, maximum temperatures, cloudiness, and wind speed. We
-                                came to our conclusion by studying where the city latitudes correspond to those four different factors. 
-                                <br></br>
-                                While there are outliers, we found there was more of a relationship between latitude and maximum temperatures in comparison to the other three factors.
-                                For a more in-depth analysis, continue through our website.
-                            </p>
+                            We studied the relationships between over 500 cities' latitude coordinates, humidity, maximum temperatures, cloudiness, and wind speed. We
+                            came to our conclusions by using a scatter plot to depict where the city latitudes correspond to those four different factors. 
                             <br></br>
-                            <a href="visual1.html">
-                                <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=600 alt="City Latitude vs Max Temp(1/5/17)">
-                            </a>  
-                        </div>
+                            In the below graphic from 1/05/2017, you can see the relationship between 547 cities from around the world and the maximum temperature they experienced. These cities were chosen at random
+                            using a for loop and APIs.
+                            <br></br>
+                            While there are outliers, we found there was more of a relationship between latitude and maximum temperatures in comparison to the other three factors.
+                            For a more in-depth analysis, continue through our website, especially our <a href="comp.html">visualization comparisons</a> for the full breakdown.
+                        </p>
+                        <br></br>
+                        <a href="visual1.html">
+                            <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=600 alt="City Latitude vs Max Temp(1/5/17)">
+                        </a>  
                     </div>
+                </div>
+            </div>
+        </div>
 <!-- link to four visualization pages, need title, heading tag, visualization, paragraph describing significance/plot -->
 <!-- comparison page, need all visualizes on same page, use bootstrap grid for visualizations, grid must be 2 vis medium and large, 
 on small screen 1 across extra-small -->
 <!-- data page must be responsive table, must be boostrap table component, use pandas to turn file into html -->
-    <!-- <div class="col-xs-12 col-sm-12 col-md-5"> -->
+<!-- copy this section to other four factor pages -->
         <div class="container">
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="w-100"></div>
-              <div class="col"></div>
-              <div class="col"></div>
-        <div class="box-bg-white">
-            <h2 class="header-three">Visualizations</h2>
-            <br></br>
-                <div class="box-images">
-                    <a href="visual2.html">      
-                        <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=400 alt="City Latitude vs Humidity(1/5/17)">
-                    </a>
-                    <a href="visual3.html">
-                        <img src="Resources/assets/images/Fig3.png" class= "img-fluid" width=400 alt="City Latitude vs Cloudiness(1/5/17)">
-                    </a>
-                    <a href="visual4.html">
-                        <img src="Resources/assets/images/Fig4.png" class= "img-fluid" width=400 alt="City Latitude vs Wind Speed (1/5/17)">
-                    </a>
-                    <a href="visual1.html">
-                        <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=400 alt="City Latitude vs Max Temp(1/5/17)">
-                    </a>
+                <div class="box-bg-white">
+                    <h2 class="header-three">Visualizations</h2>
+                    <br></br>
+                    <div class="box-images">
+                        <a href="visual2.html">      
+                            <img src="Resources/assets/images/Fig2.png" class= "img-fluid" width=400 alt="City Latitude vs Humidity(1/5/17)">
+                        </a>
+                        <a href="visual3.html">
+                            <img src="Resources/assets/images/Fig3.png" class= "img-fluid" width=400 alt="City Latitude vs Cloudiness(1/5/17)">
+                        </a>
+                        <a href="visual4.html">
+                            <img src="Resources/assets/images/Fig4.png" class= "img-fluid" width=400 alt="City Latitude vs Wind Speed (1/5/17)">
+                        </a>
+                        <a href="visual1.html">
+                            <img src="Resources/assets/images/Fig1.png" class= "img-fluid" width=400 alt="City Latitude vs Max Temp(1/5/17)">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- </div> -->
-    </div>
     </main>
-
+<!-- add JS to make the main nav work -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
